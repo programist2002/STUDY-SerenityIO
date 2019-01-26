@@ -5,6 +5,10 @@
   outline: none;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -97,9 +101,25 @@ footer {
   padding: 1%;
   border-top: 2px solid silver;
   margin-top: 10px;
-  padding-bottom: 2.5%; 
+  padding-bottom: 2%; 
 }
 
 footer img {
   width: 30px;
+  float: left;
+  margin-right: 5px;
+}
+
+#page-wrap:after {
+  content: "";
+  display: block;
+}
+
+footer, #page-wrap:after {
+  height: 10px;
+}
+
+#page-wrap {
+  min-height: 94%;
+  margin-bottom: -10px;
 }
