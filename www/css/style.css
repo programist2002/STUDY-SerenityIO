@@ -75,7 +75,7 @@ hr {
 ::-ms-selection {background: #f58b8b; color: #fff;}
 
 
-header, footer {
+header, footer{
   width: 98%;
   height: auto;
   background-color: #fff;
@@ -196,6 +196,23 @@ input[type=text].field:focus {
   background-color: #3AC7D0;
 }
 
+/*Стили для странички о нас*/
+
+#about_us {
+  width: 100%;
+  float: left;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  padding: 1%;
+}
+
+#about_us h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 /* Центральный блок нашего сайта */
 
 #main_soc_block {
@@ -230,25 +247,32 @@ input[type=text].field:focus {
 
 /* Стили для футера */
 footer {
-  padding: 1%;
+  padding: 0.5% 1% 0.5% 1%;
   border-top: 2px solid silver;
   margin-top: 10px;
-  padding-bottom: 2%; 
+  padding-bottom: 0.5%; 
+  display: flex;
+  justify-content: space-between;
+}
+
+span.left {
+  align-self: center;
 }
 
 footer img {
-  width: 30px;
+  width: 40px;
   float: left;
-  margin-right: 5px;
+  margin-right: 10px;
 }
+
 
 #page-wrap:after {
   content: "";
   display: block;
 }
 
-footer, #page-wrap:after {
-  height: 10px;
+#page-wrap:after {
+  height: 100px;
 }
 
 #page-wrap {
