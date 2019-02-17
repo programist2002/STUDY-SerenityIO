@@ -80,8 +80,7 @@ hr {
 }
 
 
-header,
-footer {
+header, footer {
   width: 98%;
   height: auto;
   background-color: #fff;
@@ -370,11 +369,13 @@ span.left_footer {
 span.right_footer {
   display: flex;
   align-items: center;
+  width: 300px;
+  justify-content: space-between;
 }
 
 footer img {
   width: 40px;
-  margin-right: 10px;
+ 
 }
 
 
